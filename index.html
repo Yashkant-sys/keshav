@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Keshav Pratihar - Instagram Influencer & Leg Spinner</title>
+  <style>
+    /* Background with moving animation using a cricket-themed image */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background: url('https://images.unsplash.com/photo-1593642632780-8b12e1b0c1b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fGNyicket%20field|&ixlib=rb-1.2.1&q=80&w=1950') no-repeat center center fixed;
+      background-size: cover;
+      animation: backgroundAnimation 30s linear infinite;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    @keyframes backgroundAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 20px;
+      position: relative;
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      border-radius: 8px;
+    }
+
+    .profile-pic {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #333;
+    }
+
+    .toggle-btn {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      padding: 10px 15px;
+      background: #007BFF;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    h1, h2 {
+      margin-top: 0;
+      animation: rotate 8s linear infinite; /* Adjusted duration for rotation */
+    }
+
+    @keyframes rotate {
+      0% { transform: rotate(0deg); }
+      70% { transform: rotate(360deg); } /* Rotate to 360 degrees */
+      100% { transform: rotate(360deg); } /* Hold at 360 degrees */
+    }
+
+    a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Dark mode styles */
+    .dark-mode {
+      background: #333;
+      color: #f4f4f4;
+    }
+    .dark-mode .container {
+      background: rgba(68, 68, 68, 0.9);
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    .dark-mode a {
+      color: #66B2FF;
+    }
+    .dark-mode .toggle-btn {
+      background: #555;
+    }
+  </style>
+</head>
+<body>
+  <button class="toggle-btn" onclick="toggleDarkMode()">Dark Mode</button>
+  <div class="container">
+    <!-- Updated Profile Picture with the new link -->
+    <img 
+      class="profile-pic" 
+      src="https://www.instagram.com/_ssup.keshav.26?igsh=MTBocnF3cnltdjZycQ==" 
+      alt="Keshav Pratihar" 
+      onerror="this.onerror=null; this.src='https://via.placeholder.com/150?text=No+Image';">
+    
+    <h1>Keshav Pratihar</h1>
+    <p><strong>Role:</strong> Instagram Influencer &amp; Leg Spinner</p>
+    <p><strong>Cricket:</strong> Plays Pya Cricket for Sai Cricket Academy</p>
+    <p><strong>Location:</strong> Etah, Pin Code 207001</p>
+    <p>
+      <strong>Instagram:</strong> 
+      <a href="https://www.instagram.com/_ssup.keshav.26?igsh=MTMweDlxNzZwMjJ4ZA==" target="_blank">
+        @_ssup.keshav.26
+      </a>
+    </p>
+    
+    <h2>About Keshav Pratihar</h2>
+    <p>
+      Keshav Pratihar is not only a rising star on Instagram but also a formidable leg spinner on the cricket field. From his early days at Sai Cricket Academy, he has shown relentless passion and dedication to perfecting his skills. His unique bowling style and charismatic presence on social media have captured the attention of both cricket enthusiasts and a wide online audience.
+    </p>
+    <p>
+      Born and raised in Etah, Keshav has always carried a deep sense of pride for his roots. With his pin code 207001 echoing in his identity, he represents a blend of traditional values and modern ambition. His journey in cricket is a testament to hard work and perseverance, often inspiring young players in his community to pursue their dreams with passion.
+    </p>
+    <p>
+      Off the field, Keshav is a creative influencer who uses his platform to share moments from his daily life, training sessions, and behind-the-scenes glimpses of his sporting adventures. His engaging content and approachable demeanor have earned him a loyal following, making him one of the noteworthy influencers in the cricket community.
+    </p>
+    <p>
+      Whether it's on the pitch or online, Keshav Pratihar continues to break boundaries and redefine what it means to be a modern athlete. His journey is a vibrant mix of athletic excellence, creative expression, and a commitment to inspiring others.
+    </p>
+  </div>
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+</body>
+</html>
